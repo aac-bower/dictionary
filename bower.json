@@ -1,6 +1,6 @@
 {
   "name": "aac-dictionary",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "aac",
   "main": [
     "build/dist/app.min.js",
