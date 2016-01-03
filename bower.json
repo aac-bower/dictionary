@@ -1,0 +1,24 @@
+{
+  "name": "aac-dictionary",
+  "version": "0.0.1",
+  "description": "aac",
+  "main": [
+    "build/app.min.js",
+    "build/style.min.css"
+  ],
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "*.sublime-project",
+    "*.sublime-workspace",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7"
+  }
+}
