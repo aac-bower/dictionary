@@ -3,8 +3,8 @@
   "version": "0.0.3",
   "description": "aac",
   "main": [
-    "build/app.min.js",
-    "build/style.min.css"
+    "build/dist/app.min.js",
+    "build/dist/style.min.css"
   ],
   "moduleType": [],
   "license": "MIT",
