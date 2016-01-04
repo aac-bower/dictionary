@@ -1,10 +1,9 @@
 {
   "name": "aac-dictionary",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "aac",
   "main": [
-    "build/app.min.js",
-    "build/style.min.css"
+    "build/dist/app.min.js"
   ],
   "moduleType": [],
   "license": "MIT",

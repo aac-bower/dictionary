@@ -10,24 +10,55 @@
 
         <link rel="stylesheet" href="dist/style.min.css">
     </head>
-    <body ng-app="aac.dictionary">
+    <body ng-app="example">
 
         <!-- This file should represent how someone can use your component. So which scripts to ref and what html is needed. -->
         <!-- Note that the final version of this will be in the build folder after you run: $ gulp build -->
         <section class="aw-webapp">
-            
+            <header>
+                <h1>AAC Dictionary</h1>
+            </header>
+            <section>
+                <header>
+                    <h3>Normal Translations</h3>
+                </header>
+                <section>
+                    <p>Normal translations can be done like this:</p>
+                    <code>{<span>{</span>__('String to translate')<span>}</span>}</code>
+                    <p>Result: <span>{{__('String to translate')}}</span></p>
+                </section>
+            </section>
+            <section ng-controller="ExampleController as ExampleCtrl">
+                <header>
+                    <h3>Switching Languages</h3>
+                </header>
+                <section>
+                    <button ng-click="ExampleCtrl.setLanguage('en')">{{__('English')}}</button>
+                    <button ng-click="ExampleCtrl.setLanguage('nl')">{{__('Dutch')}}</button>
+                </section>
+            </section>
+            <section>
+                <header>
+                    <h3>Unknown Translations</h3>
+                </header>
+                <section>
+                    <p>You can set debug to true with the <code>DictionaryProvider.setConfig('debug', true)</code>. If this is set to true unknown translation strings will look like this</p>
+                    <p>Result: <span>{{__('Unknown String')}}</span></p>
+                </section>
+            </section>
+            <example-directive></example-directive>
         </section>
 
 
         <script src="dist/vendor.min.js"></script>
 
 
-        <!-- build:js dist/app.min.js -->
-        <!-- inject:js -->
-        <script src="app/index.module.js"></script>
-        <script src="app/index.config.js"></script>
-        <!-- endinject -->
-        <!-- endbuild -->
+        <script src="app/example/example.module.js"></script>
+        <script src="app/example/example.config.js"></script>
+        <script src="app/example/example.controller.js"></script>
+        <script src="app/example/example.directive.js"></script>
+        
+        <script src="dist/app.min.js"></script>
 
     </body>
 </html>

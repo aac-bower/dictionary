@@ -12,9 +12,7 @@
         .module(
             'aac.dictionary', 
             [
-                'templates',
-
-                
+                'templates'
             ]
         );
 
